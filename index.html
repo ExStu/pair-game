@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pair Game</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer type="module" src="./js/game.js"></script>
+  <script defer src="./js/confetti.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Enjoy the game of pairs!</h1>
+      <input type="number" class="header__input" min="2" max="10" id="input">
+      <button class="header__btn" id="start-btn" onclick="this.disabled = true">Start</button>
+      <button class="header__btn" id="clear-btn">Clear</button>
+      <div class="header__timer" id="timer"></div>
+    </div>
+  </header>
+  <main>
+    <section class="playground">
+      <div class="container">
+        <div class="game" id="game">
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="overlay" id="overlay">
+    <span>YOU WON!</span>
+  </div>
+  <!-- <div class="overlay-loser" id="overlay-loser">
+    <span>YOU LOST!</span>
+  </div> -->
+  <div class="game-over" id="game-over">
+    <span>YOU LOST!</span>
+  </div>
+</body>
+</html>
